@@ -1,0 +1,155 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: #2e2e2e;
+    background-size: cover;
+    font-family: "Kanit", sans-serif;
+}
+
+header{
+    z-index: 3;
+    width: 190px;
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #707070;
+    box-shadow: 0px 0px 10px #000000;
+    border: 1px solid #000000;
+    border-radius: 95px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header ul{
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+header li{
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+header li:hover{
+    transform: scale(1.2);
+    text-shadow: 0px 0px 10px #000000;
+    cursor: pointer;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 1px solid #ffffff;
+    transition: 0.3s;
+}
+
+header a:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.main-fill{
+    width: 100%;
+    height: 100%;
+}
+
+.record-box{
+    width: 900px;
+    padding-bottom: 20px;
+    margin: 10px auto;
+    border: 1px solid #000000;
+    display: inline-block;
+    position: static;
+}
+
+.record-player{
+    width: 450px;
+    height: 450px;
+    display: block;
+    position: sticky;
+    top: 20px;
+    left: 0px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid #000000;
+    border-radius: 30px; 
+    background-color: #707070;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.record{
+    width: 400px;
+    height: 400px;
+    margin-top: 25px;
+    display: inline-block;
+    position: relative;
+    object-fit: cover;
+    background-color: #ffffff;
+    border: 5px solid #ffffff;
+    border-radius: 200px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+.record::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 175px;
+    left: 175px;
+    background-color: #707070;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px inset #000000;
+}
+
+.record-title{
+    width: 400px;
+    height: auto;
+    color: #ffffff;
+    font-size: 30px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.record-about{
+    width: 400px;
+    height: auto;
+    color: #c5c5c5;
+    font-size: 20px;
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.record audio{
+    width: 300px;
+    float: left;
+    margin-top: 5px;
+}
+
+.pal-c{
+    color: #ffffff;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>monotone record</title>
+</head>
+
+<body id="body">
+
+    <header>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html">sign in</a></li>
+            <li><a href="index.html">up load</a></li>
+            <li><a href="index.html">search</a></li>
+            <li><a onclick="randomRecord()" title="Select music at random. Since it is random, you may be covered.">random</a></li>
+        </ul>
+    </header>
+
+
+    <div class="main-fill">
+
+        <div id="recordBox" class="record-box">
+            <div class="record-player">
+                <img id="recordImg" class="record" src="" data-src="no_image.png" oncontextmenu="return false;">
+            </div>
+            <p id="recordTitle" class="record-title">MONOTONE RECORD</p>
+            <p id="recordAbout" class="record-about">This site was created as a programming exercise.On this site, you can upload your music and albums and share your creations with the world.You can also listen to, rate, and comment on music created by others.Let's get started on the monotone record!These texts were translated at DeepL.</p>
+            <audio controls src="" id="recordMusic"></audio>
+        </div>
+
+        <div class="record-author">
+            <img>
+        </div>
+
+        <div class="other-records">
+
+        </div>
+
+        <p class="pal-c">Ⓒmopirierion</p>
+    </div>
+
+    <script> //画像の遅延読み込み
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                var slowImages = document.querySelectorAll('img[data-src]');
+                slowImages.forEach(function(img) {
+                img.setAttribute('src', img.getAttribute('data-src'));
+                });
+            }, 150); // 150ミリ秒遅延実行
+        });
+    </script>
+</body>
+</html>
